@@ -58,17 +58,17 @@
 					animation-fill-mode: forwards;
 				}
 				.dot-3 {
-					background-color: #f74d75;
+					background-color: #ff4d33;
 					animation: dot-3-move 2s ease;
 					animation-fill-mode: forwards;
 				}
 				.dot-2 {
-					background-color: #10beae;
+					background-color: #10be44;
 					animation: dot-2-move 2s ease;
 					animation-fill-mode: forwards;
 				}
 				.dot-1 {
-					background-color: #ffe386;
+					background-color: #3388ee;
 					animation: dot-1-move 2s ease;
 					animation-fill-mode: forwards;
 				}

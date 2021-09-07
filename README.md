@@ -11,9 +11,9 @@
    <a href="https://www.linkedin.com/in/kkuchar/">
     <img src="https://img.shields.io/badge/linkedin-Krzysztof  Kucharski-blue">
   </a>  
-</p> 
+</p>      
         
-- 🔭 Working as Software Engineer / Analyst     
+- 🔭 Working as Software Engineer / Analyst
 - 🌱 Currently learning everything :) But mostly ReactJS, Typescript and Redux this year   
 - ⚡  In spare time play guitar and learn to compose music
 - 🥅 My optimistic 2021 tasks and plans:  
