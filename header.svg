@@ -1,89 +1,82 @@
 <svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+ <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"/>
+    </filter>
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml">
 			<style>
-				@keyframes rotate {
-					0% {
-						transform: rotate(3deg);
-					}
-					100% {
-						transform: rotate(-3deg);
-					}
+				@keyframes dot-3-move {
+					20% {transform: translateY(0px) scale(1)}
+					45% {transform: translateY(-90px) scale(.45)}
+					60% {transform: translateY(-90px) scale(.45)}
+					80% {transform: translateY(-18px) scale(.45)}
+					100% {transform: translateY(-90px) scale(.45)}
 				}
-
-				@keyframes gradientBackground {
-					0% {
-						background-position: 0% 50%;
-					}
-					50% {
-						background-position: 100% 50%;
-					}
-					100% {
-						background-position: 0% 50%;
-					}
+				@keyframes dot-2-move {
+					100% {transform: translate(-80px, 60px) scale(.45)}
+					80% {transform: translate(-16px, 12px) scale(.45)}
+					45% {transform: translate(-80px, 60px) scale(.45)}
+					20% {transform: translate(-80px, 60px) scale(.45)}
+					0% {transform: translateY(0px) scale(1)}
 				}
-
-				@keyframes fadeIn {
-					0% {
-						opacity: 0;
-					}
-					66% {
-						opacity: 0;
-					}
-					100% {
-						opacity: 1;
-					}
+				@keyframes dot-1-move {
+					100% {transform: translate(80px, 60px) scale(.45)}
+					80% {transform: translate(16px, 12px) scale(.45)}
+					60% {transform: translate(80px, 60px) scale(.45)}
+					45% {transform: translate(80px, 60px) scale(.45)}
+					20% {transform: translateY(0px) scale(1)}
 				}
-
+				@keyframes rotate-move {
+					100% {transform: translate(-50%, -50%) rotate(0deg)}
+					80% {transform: translate(-50%, -50%) rotate(360deg)}
+					55% {transform: translate(-50%, -50%) rotate(360deg)}
+				}
 				.container {
-					font-family:
-						system-ui,
-						-apple-system,
-						'Segoe UI',
-						Roboto,
-						Helvetica,
-						Arial,
-						sans-serif,
-						'Apple Color Emoji',
-						'Segoe UI Emoji';
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					justify-content: center;
-					margin: 0;
-					width: 100%;
-					height: 400px;
-					background: linear-gradient(-45deg, #fc5c7d, #6a82fb, #05dfd7);
-					background-size: 600% 400%;
-					animation: gradientBackground 10s ease infinite;
-					border-radius: 10px;
-					color: white;
-					text-align: center;
+					width: 300px;
+					height: 300px;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					margin: auto;
+					filter: url('#goo');
+					animation: rotate-move 2s ease-in-out;
 				}
-
-				h1 {
-					font-size: 50px;
-					line-height: 1.3;
-					letter-spacing: 5px;
-					text-transform: uppercase;
-					text-shadow:
-						0 1px 0 #efefef,
-						0 2px 0 #efefef,
-						0 3px 0 #efefef,
-						0 4px 0 #efefef,
-						0 12px 5px rgba(0, 0, 0, 0.1);
-					animation: rotate ease-in-out 1s infinite alternate;
+				.dot {
+					width: 150px;
+					height: 150px;
+					border-radius: 50%;
+					background-color: #000;
+					position: absolute;
+					border: none;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					margin: auto;
+					animation-fill-mode: forwards;
 				}
-
-				p {
-					font-size: 20px;
-					text-shadow: 0 1px 0 #efefef;
-					animation: 5s ease 0s normal forwards 1 fadeIn;
+				.dot-3 {
+					background-color: #f74d75;
+					animation: dot-3-move 2s ease;
+					animation-fill-mode: forwards;
+				}
+				.dot-2 {
+					background-color: #10beae;
+					animation: dot-2-move 2s ease;
+					animation-fill-mode: forwards;
+				}
+				.dot-1 {
+					background-color: #ffe386;
+					animation: dot-1-move 2s ease;
+					animation-fill-mode: forwards;
 				}
 			</style>
 			<div class="container">
-				<h1>Made with HTML &amp; CSS<br/>not an animated GIF</h1>
-				<p>Click to see the source</p>
+				<div class="dot dot-1"></div>
+				<div class="dot dot-2"></div>
+				<div class="dot dot-3"></div>
 			</div>
 		</div>
 	</foreignObject>
