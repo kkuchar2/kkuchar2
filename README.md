@@ -32,6 +32,6 @@
     - Create axios redux wrapper library to simplify my workflow with API requests :white_check_mark:
     - Add README and documentation for current projects :black_square_button:    
     - Try to switch static files serving system to Firebase to save 5$ :white_check_mark:
-    - Create and deploy personal portfolio :black_square_button:
+    - Create and deploy personal portfolio :white_check_mark:
 
 [linkedin]: https://www.linkedin.com/in/kkuchar/
