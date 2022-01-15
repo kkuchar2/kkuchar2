@@ -1,12 +1,3 @@
-<div align="center">
-	<br>
-	<a href="./header.svg">
-		<img src="header.svg" width="800" height="100" alt="" />
-	</a>
-	<br>
-</div>
-
-<h2 align="center">Hi, I'm Krzysztof Kucharski</h1>
  <p align="centlefter"><br/>
    <a href="https://kkucharski.com">
    <img src="https://img.shields.io/badge/website-kkucharski.com-1aa?style=for-the-badge">
