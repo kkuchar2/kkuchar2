@@ -12,7 +12,7 @@
    <img src="https://img.shields.io/badge/linkedin-Krzysztof  Kucharski-blue?style=for-the-badge&logo=linkedin">
   </a>  
    <a href="https://kkucharski.com">
-   <img src="https://img.shields.io/badge/website-kkucharski.com-1aa?style=for-the-badge&logo=linkedin">
+   <img src="https://img.shields.io/badge/website-kkucharski.com-1aa?style=for-the-badge">
   </a>  
 </p>      
         
