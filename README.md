@@ -7,6 +7,6 @@
   </a>  
 </p>      
         
-- 🔭 Working as Software Engineer / Analyst
+- 🔭 Working as Software Engineer
 - 🌱 Currently learning everything :) But mostly ReactJS, Typescript and Redux this year   
-- ⚡  In spare time play guitar and learn to compose music
+- ⚡  In spare time I play guitar and larn piano
