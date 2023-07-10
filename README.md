@@ -9,4 +9,4 @@
         
 - 🔭 Working as Software Engineer
 - 🌱 Currently learning everything :) But mostly ReactJS, Typescript and Redux this year   
-- ⚡  In spare time I play guitar and larn piano
+- ⚡  In spare time I play guitar and learn piano
